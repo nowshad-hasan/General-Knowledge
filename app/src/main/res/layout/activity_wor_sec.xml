@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.summithaque.generalknowledge.WorSec">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="@drawable/img12"
+        android:id="@+id/relativeLayout2"></RelativeLayout>
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="@string/worSecBack"
+        android:id="@+id/worSecBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#81aec1"
+        android:textColor="#123456"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:onClick="backMethod" />
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="@string/worSecNext"
+        android:id="@+id/worSecNext"
+        android:layout_alignBottom="@+id/worSecBack"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:background="#81aec1"
+        android:textColor="#123456"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:onClick="nextMethod" />
+
+</RelativeLayout>
